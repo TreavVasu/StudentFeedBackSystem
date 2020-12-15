@@ -30,6 +30,7 @@ public class EnterQuestionScreen {
 
     TeachPannel teachPannel = new TeachPannel();
 
+    //Constructs the Screen
     public void createScreen(){
 
         frame = new JFrame("Question Screen");
@@ -62,6 +63,7 @@ public class EnterQuestionScreen {
 
     }
 
+    //Counts the word
     private KeyListener wordCounter() {
         return new KeyAdapter() {
             @Override
@@ -89,6 +91,7 @@ public class EnterQuestionScreen {
         exitButton.addActionListener((exittt)->frame.dispose());
     }
 
+    //Execute and Check details on Button Press
     private void bAction(){
         ReadWrite rw = new ReadWrite();
         //teachPannel.saveQuestion(questionArea.getText(),key);

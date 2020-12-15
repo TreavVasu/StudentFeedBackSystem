@@ -25,7 +25,7 @@ public class AvailableResponseScreen {
     String[] choices;
     AnalysisScreen analysisScreen= new AnalysisScreen();
 
-
+    //Constructs the Screen
     public void createScreen(){
         frame = new JFrame("Available Response Screen");
         frame.setVisible(true);
@@ -44,6 +44,7 @@ public class AvailableResponseScreen {
     }
 
 
+    //get contents for tree
     private void fillTree(){
         ReadWrite rd = new ReadWrite();
         choices = rd.dirRead().toArray(new String[0]);
@@ -61,6 +62,7 @@ public class AvailableResponseScreen {
 
     }
 
+    //If Selected node on Tree
     private void functionsDone(){
         loader.addActionListener(new ActionListener() {
             @Override

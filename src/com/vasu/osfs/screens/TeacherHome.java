@@ -23,6 +23,7 @@ public class TeacherHome{
     EnterQuestionScreen eqs = new EnterQuestionScreen();
     AvailableResponseScreen ars = new AvailableResponseScreen();
 
+    //Constructs the Screen
     public void TeachHome(){
         frame = new JFrame("Teacher Home");
         frame.setVisible(true);
@@ -113,6 +114,8 @@ public class TeacherHome{
             }
         });
     }
+
+    //Options to select:
 
     private void viewResp() {
         ars.createScreen();

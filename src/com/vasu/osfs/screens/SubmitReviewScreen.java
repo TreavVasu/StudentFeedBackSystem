@@ -27,8 +27,8 @@ public class SubmitReviewScreen {
 
     MyThread mt = new MyThread("Slowing down");
     FeedBack feedBack = new FeedBack();
-    //StudentScreen studentScreen = new StudentScreen();
 
+    //Constructs the Screen
     public void createScreen(){
         frame = new JFrame("Student Home");
         frame.setVisible(true);
@@ -84,13 +84,16 @@ public class SubmitReviewScreen {
         );
     }
 
+    //Load Q function
     public String getQuestion(String key){
         return feedBack.getQuestion(key+".feedback");
     }
 
+    //store for review storage
     public void storeKey(String code){
         key=code;
     }
+
 
     public void rateAction(){
         experinceTF.addKeyListener(changeSlider());
@@ -110,6 +113,7 @@ public class SubmitReviewScreen {
 
     }
 
+    //Slider here
     private ChangeListener changeTF() {
         return new ChangeListener() {
             @Override
@@ -119,6 +123,7 @@ public class SubmitReviewScreen {
         };
     }
 
+    //Handles slider and input irregularity
     private KeyListener changeSlider() {
         return new KeyAdapter() {
             @Override

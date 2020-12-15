@@ -22,6 +22,7 @@ public class LoginScren extends JFrame {
     String wMessage=htmlOp+welcomeMessage;
     commonFunction function = new commonFunction();
 
+    //Constructs the Screen
     LoginScren(){
         this.setTitle("HomeScreen- FeedBack System");
         this.setVisible(true);
@@ -89,10 +90,12 @@ public class LoginScren extends JFrame {
         }
     }
 
+    //Destroy used in other screens to call this
     public void disposeFrame(){
         this.dispose();
     }
 
+    //Update name
     private KeyListener userTyped() {
         return new KeyAdapter() {
             @Override
@@ -102,6 +105,7 @@ public class LoginScren extends JFrame {
             }
         };
     }
+
 
     private void mainPanelCreateElements() {
         // mainPannel 400w x 500h
@@ -141,6 +145,7 @@ public class LoginScren extends JFrame {
     }
 
 
+    //Handle Radio button
     private void pressStart(){
 
         if (jcS.isSelected()){

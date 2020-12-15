@@ -7,6 +7,7 @@ import java.awt.*;
 
 public class SplashScreen extends JFrame {
 
+    //Constructs the Screen
     public SplashScreen() {
 
         ImageIcon teach = createImageIcon("../assets/classrooms.png", "");
@@ -55,6 +56,7 @@ public class SplashScreen extends JFrame {
         ExitnOpen();
     }
 
+    //Pauses the Thread for next activity to continue
     private void ExitnOpen() {
         MyThread mt = new MyThread("ScreenThread");
         mt.run(2000);
@@ -62,7 +64,8 @@ public class SplashScreen extends JFrame {
         dispose();
     }
 
-
+    //Function for getting Image fails in Ubuntu by Standard Method
+    //Taken from docs.java.com
     private ImageIcon createImageIcon(String s, String description) {
         java.net.URL imgURL = getClass().getResource(s);
         if (imgURL != null) {

@@ -65,6 +65,8 @@ public class StudentScreen extends JFrame {
         actionsHere();
     }
 
+
+    //On Button Click
     private void actionsHere()
     {
         enterKeyButton.addActionListener((ae)->keyEntryBox());

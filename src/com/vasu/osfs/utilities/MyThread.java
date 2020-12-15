@@ -2,7 +2,7 @@ package com.vasu.osfs.utilities;
 
 import javax.swing.*;
 import java.util.List;
-
+//Wait for the splash screen to go then change to login
 public class MyThread extends Thread{
     public MyThread(String name){
         super(name);

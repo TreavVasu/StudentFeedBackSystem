@@ -26,7 +26,7 @@ public class AnalysisScreen {
     String lineBreak="<br>";
 
 
-
+    //Constructs the Screen
     public void createScreen(){
         frame = new JFrame("Response Analysis Screen");
         frame.setVisible(true);
@@ -75,6 +75,7 @@ public class AnalysisScreen {
 
     }
 
+    //Get number of people for what number of response
     public void analysis(List<String> resp){
 
         int one=0,two=0,thee=0,four=0,five=0;
@@ -116,6 +117,7 @@ public class AnalysisScreen {
         stats       =   new JLabel("Stats Mentioned here !");
     }
 
+    //Analysis
     public void doAnal(String key){
         try {
             qLabel.setText(htmlop+"Question asked:"+lineBreak+tp.loadQ(key)+htmlclo);

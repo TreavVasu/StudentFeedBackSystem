@@ -10,6 +10,8 @@ public class FeedBack extends ReadWrite {
     String OTCode;
     int Resp;
     String sub;
+
+    //Takes code
     public void EnterCode(){
         System.out.print("Enter Key to Give FeedBack:");
         Scanner Code = new Scanner(System.in);
@@ -39,6 +41,7 @@ public class FeedBack extends ReadWrite {
         }
     }
 
+    //Matches it.
     public boolean confirmCode(String code){
         //Confirm if there is a file named as Key or Code
         //If not return True or flase
@@ -55,6 +58,7 @@ public class FeedBack extends ReadWrite {
         return false;
 
     }
+
 
     public String getQuestion(String key){
         //JDBC OR File implementation here to change

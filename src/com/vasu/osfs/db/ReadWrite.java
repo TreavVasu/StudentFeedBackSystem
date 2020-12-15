@@ -12,6 +12,7 @@ import static java.nio.file.StandardOpenOption.CREATE;
 public class ReadWrite {
 
 
+    //Function to append to file or create new multiple usage
     public void writeToFile(String fileName,String content){
 
         // Convert the string to a
@@ -29,6 +30,7 @@ public class ReadWrite {
 
     }
 
+    //Use for reading Q
     public String readFromFile(String fileName){
         String Question="";
         Path file = Path.of("./"+fileName);
@@ -48,6 +50,7 @@ public class ReadWrite {
         return Question;
     }
 
+    //To avoid double processing the output function to read contents of dir
     public List<String> dirRead(){
         List<String> keyList=new ArrayList<String>();
         int i=0;
@@ -71,6 +74,8 @@ public class ReadWrite {
         }
         return keyList;
     }
+
+    //To fetch output in List from dir
     public List<String> readResp(String fileName){
         String Question="";
         Path file = Path.of("./"+fileName);
